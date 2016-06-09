@@ -23,24 +23,19 @@ sudo apt-get install -y emacs
 
 # -----Basic module----
 sudo apt-get install -y git
+sudo apt-get install -y unzip
+
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+rm ngrok-stable-linux-amd64.zip
+
 
 # -----Optional modules-----
 sudo apt-get install -y nmap
-
-
-# Elasticsearch
-wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
-echo "deb https://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
-echo "deb https://packages.elastic.co/logstash/2.3/debian stable main" | sudo tee -a /etc/apt/sources.list
-echo "deb http://packages.elastic.co/kibana/4.5/debian stable main" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install -y openjdk-7-jre
-sudo apt-get install -y logstash
-sudo apt-get install -y kibana
-sudo apt-get install -y elasticsearch
 
 
 # ----21dotco-----needs pass username plus need to store machine wallet retrieval key, plus reboot for docker
 curl https://21.co | sh
 21 join
 21 sell start --all
+
