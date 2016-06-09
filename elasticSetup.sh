@@ -18,10 +18,11 @@ sudo git clone https://github.com/lukas-vlcek/bigdesk
 sudo mkdir _site
 sudo mv bigdesk/* _site
 sudo mv _site bigdesk
-sed -i"" 's/major == 1/major >= 1/' bigdesk/_site/js/store/BigdeskStore.js
+cd /usr/share/elasticsearch/plugins/
+sudo sed -i"" 's/major == 1/major >= 1/' bigdesk/_site/js/store/BigdeskStore.js
+
 
 cd $HOME
-
 echo "description=bigdesk" >> plugin-descriptor.properties
 echo "version=master" >> plugin-descriptor.properties
 echo "site=true" >> plugin-descriptor.properties
