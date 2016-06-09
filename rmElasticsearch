@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo apt-get purge elasticsearch
+
+rm /usr/lib/systemd/system/elasticsearch.service
+rm /var/lib/dpkg/info/elasticsearch.list /var/lib/dpkg/info/elasticsearch.postrm
+rm /etc/init.d/elasticsearch
+rm /etc/default/elasticsearch
+rm -rf /etc/elasticsearch
+
+userdel elasticsearch
