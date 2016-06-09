@@ -30,6 +30,6 @@ rm ngrok-stable-linux-amd64.zip
 
 
 # -----Optional modules-----
-sudo apt-get install -y nmap
+sudo apt-get install -y nmap grok
 
 
