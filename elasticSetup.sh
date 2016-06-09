@@ -28,3 +28,6 @@ echo "version=master" >> plugin-descriptor.properties
 echo "site=true" >> plugin-descriptor.properties
 echo "name=bigdesk" >> plugin-descriptor.properties
 sudo mv plugin-descriptor.properties /usr/share/elasticsearch/plugins/bigdesk/plugin-descriptor.properties
+
+cd /opt/logstash/
+sudo bin/logstash-plugin install logstash-codec-nmap
