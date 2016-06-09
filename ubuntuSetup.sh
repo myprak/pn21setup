@@ -22,7 +22,6 @@ sudo apt-get install -y emacs
 
 
 # -----Basic module----
-sudo apt-get install -y git
 sudo apt-get install -y unzip
 
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
