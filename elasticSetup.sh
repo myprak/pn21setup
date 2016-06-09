@@ -31,3 +31,7 @@ sudo mv plugin-descriptor.properties /usr/share/elasticsearch/plugins/bigdesk/pl
 
 cd /opt/logstash/
 sudo bin/logstash-plugin install logstash-codec-nmap
+
+sudo service elasticsearch start
+sudo service kibana start
+sudo service logstash start
