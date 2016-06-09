@@ -32,6 +32,7 @@ sudo mv plugin-descriptor.properties /usr/share/elasticsearch/plugins/bigdesk/pl
 cd /opt/logstash/
 sudo bin/logstash-plugin install logstash-codec-nmap
 sudo bin/logstash-plugin install logstash-input-http
+sudo bin/logstash-plugin install logstash-codec-rubydebug
 
 sudo service elasticsearch start
 sudo service kibana start
