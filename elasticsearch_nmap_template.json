@@ -1,3 +1,18 @@
 {
-  "template": "nmap-logstash-*"
+    "template" : "nmap-logstash-*",
+    "mappings" : {
+	"nmap_scan_metadata" : {
+	    "properties" : {
+		"@timestamp" : {
+		    "type" : "date",
+		    "format" : "strict_date_optional_time||epoch_millis"
+		},
+		"xmloutputversion" : {
+                    "type" : "string"
+                }
+	    }
+	}
+    }
 }
+
+

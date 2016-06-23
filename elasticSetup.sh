@@ -35,6 +35,3 @@ sudo bin/logstash-plugin install logstash-input-http
 sudo bin/logstash-plugin install logstash-codec-rubydebug
 sudo bin/logstash-plugin install logstash-codec-json_lines
 
-sudo service elasticsearch start
-sudo service kibana start
-sudo service logstash start
